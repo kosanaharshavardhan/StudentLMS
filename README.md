@@ -8,25 +8,43 @@ This project integrates:
 
 A React frontend (client/)
 
-A Node.js/Express backend API (server/)
+A Node.js / Express backend API (server/)
 
-A database (e.g., MongoDB — you can configure in .env)
+A database (e.g., MongoDB — configurable via .env)
 
 It aims to offer a system where users can sign up, view courses, submit assignments, track progress, and interact with academic resources.
 
 🚀 Features (Typical LMS)
 
-🧑‍🎓 User authentication (register/login)
+🧑‍🎓 User authentication (register / login)
 
 📚 Course listing and enrollment
 
 📂 Assignment upload and management
 
 🛠️ Tech Stack
-Frontend	React, JavaScript, CSS
-Backend	Node.js, Express.js
-Database	(MongoDB or other — set via .env)
-Auth	JWT (JSON Web Tokens)
+
+Frontend
+
+React
+
+JavaScript
+
+CSS
+
+Backend
+
+Node.js
+
+Express.js
+
+Database
+
+MongoDB (or other, configured via .env)
+
+Authentication
+
+JWT (JSON Web Tokens)
 
 📁 Directory Structure
 StudentLMS/
@@ -36,46 +54,44 @@ StudentLMS/
 ├── README.md
 
 📦 Installation & Setup
-1. Clone the repository
+Clone the repository
 git clone https://github.com/kosanaharshavardhan/StudentLMS.git
 cd StudentLMS
 
-2. Backend setup
+Backend setup
 cd server
 npm install
 
 
-Create a .env file in the backend folder and add:
+Create a .env file in the server folder and add:
 
 PORT=5000
 MONGO_URI=<your_mongo_connection_string>
 JWT_SECRET=<your_jwt_secret>
 
-3. Frontend setup
+Frontend setup
 cd ../client
 npm install
 
-4. Start development servers
-
-Backend:
-
+▶️ Running the Application
+Backend
 cd ../server
 npm start
 
-
-Frontend:
-
+Frontend
 cd ../client
 npm start
 
 
-The app should now run — typically frontend on http://localhost:3000
- and backend on http://localhost:5000
-.
+The app should now run with:
+
+Frontend: http://localhost:3000
+
+Backend: http://localhost:5000
 
 📌 Environment Variables
 
-Make sure to include:
+Ensure the following are set in your .env file:
 
 PORT=5000
 MONGO_URI=...
